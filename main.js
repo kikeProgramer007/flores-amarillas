@@ -11,7 +11,7 @@ window.onload = function() {
  
     Swal.fire({
       title: '<h5>Hoy 21 de Septiembre😍</h5>',
-      html: 'Solo quería decirte lo mucho que me importas. A pesar del tiempo y la distancia, siempre serás tú... 💔<br>ERES MI PERSONA FAVORITA<br>Gracias por todo, mi amor; te tendré siempre en mi corazón. Te amo mucho.',
+      html: '<span style="font-family: \'Poppins\' , cursive; font-size: 14px;">Solo quería decirte lo mucho que me importas. A pesar del tiempo y la distancia, siempre serás tú... 💔<br>ERES MI PERSONA FAVORITA<br>Gracias por todo, mi amor; te tendré siempre en mi corazón. Te amo mucho. <br>Atte Enrique.</span>',
       confirmButtonText: 'Gracias 😊',
       imageWidth: 200,
       imageHeight: 128,
@@ -66,11 +66,8 @@ const elements = document.querySelectorAll('.flower, .growing-grass', '.grow-ans
 
 elements.forEach(element => {
   element.addEventListener('click', () => {
-      const isFlower = element.classList.contains('flower');
-      const title = isFlower ? '<h5>Hoy 21 de Septiembre😍</h5>' : '<h5>¡Hola! 🌱</h5>';
-      const html = isFlower 
-          ? 'Solo quería decirte lo mucho que me importas. A pesar del tiempo y la distancia, siempre serás tú... 💔<br>ERES MI PERSONA FAVORITA<br>Gracias por todo, mi amor; te tendré siempre en mi corazón. Te amo mucho.'
-          : 'Esta es una hierba especial que también quiere decirte algo. 🌼<br>¡Cuida siempre de las plantas y flores!';
+      const title = '<h5>Hoy 21 de Septiembre😍</h5>';
+      const html = '<span style="font-family: \'Poppins\' , cursive; font-size: 14px;">Solo quería decirte lo mucho que me importas. A pesar del tiempo y la distancia, siempre serás tú... 💔<br>ERES MI PERSONA FAVORITA<br>Gracias por todo, mi amor; te tendré siempre en mi corazón. Te amo mucho. <br>Atte Enrique.</span>';
       
       showAlert(title, html);
   });
